@@ -1,0 +1,110 @@
+header
+  background:
+    image: url(../img/header/header-bg.png)
+    size: cover
+    position: center center
+  height: 900px
+  width: 100%
+
+  .header-container
+    max-width: 800px
+    margin: 0 auto
+    padding: 20px
+
+    .top-header
+
+      .logo
+        float: left
+
+      .navigation
+        float: right
+        padding-top: 22px
+
+        ul
+          padding: 0
+          margin: 0
+
+          li
+            display: inline
+            text-decoration: none
+            list-style-type: none
+            padding: 0 10px
+            color: #fff
+            font:
+              size: 16px
+
+          li:hover
+            color: $primary-color
+
+        a:focus, a:active
+          .underline
+            border-bottom: 3px solid $primary-color
+            padding: 1px
+            color: $primary-color
+          //
+          // span
+          //   padding-left: 100px
+
+    // Flex Wrap Styles
+
+    .flex-wrap
+      display: flex
+      justify-content: center
+      width: 100%
+      padding: 100px 0
+      margin: 0 auto
+
+      // flex Item Styles
+
+      .flex-items
+        max-width: 100%
+        margin: 20px auto
+        justify-content: center
+
+        h1
+          margin: 0
+          width: 100%
+          font:
+            size: 40px
+            weight: 400
+          padding-bottom: 30px
+
+        p
+          max-width: 400px
+
+        img
+          width: 300px
+          height: 400px
+
+        button, h3
+          display: inline
+
+        h3
+          font:
+            size: 16px
+            weight: bold
+          padding-left: 25px
+
+        button
+          background-color: $primary-color
+          text-transform: uppercase
+          color: #fff
+          border-radius: 20px
+          padding: 10px 45px
+          border: none
+
+        button:hover
+          background-color: lighten($primary-color, 20%)
+
+    @media (max-width: 990px)
+
+      .flex-wrap
+        display: block
+        text-align: center
+        padding: 0
+        margin: 0 auto
+
+        .flex-items
+          width: auto
+          text-align: center
+          margin-bottom: 70px
