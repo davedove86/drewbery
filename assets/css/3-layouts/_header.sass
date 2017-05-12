@@ -3,7 +3,7 @@ header
     image: url(../img/header/header-bg.png)
     size: cover
     position: center center
-  height: 900px
+  height: auto
   width: 100%
 
   .header-container
@@ -85,18 +85,14 @@ header
             weight: bold
           padding-left: 25px
 
-        button
-          background-color: $primary-color
-          text-transform: uppercase
-          color: #fff
-          border-radius: 20px
-          padding: 10px 45px
-          border: none
-
-        button:hover
-          background-color: lighten($primary-color, 20%)
-
     @media (max-width: 990px)
+
+      .navigation
+        text-align: center
+        padding-bottom: 30px
+
+        .phone
+          display: none
 
       .flex-wrap
         display: block

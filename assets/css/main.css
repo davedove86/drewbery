@@ -476,12 +476,21 @@ body {
   color: #2D2D2D;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
+  body button {
+    background-color: #00A3DA;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 45px;
+    border: none; }
+  body button:hover {
+    background-color: #41cfff; }
 
 header {
   background-image: url(../img/header/header-bg.png);
   background-size: cover;
   background-position: center center;
-  height: 900px;
+  height: auto;
   width: 100%; }
   header .header-container {
     max-width: 800px;
@@ -538,16 +547,12 @@ header {
           font-size: 16px;
           font-weight: bold;
           padding-left: 25px; }
-        header .header-container .flex-wrap .flex-items button {
-          background-color: #00A3DA;
-          text-transform: uppercase;
-          color: #fff;
-          border-radius: 20px;
-          padding: 10px 45px;
-          border: none; }
-        header .header-container .flex-wrap .flex-items button:hover {
-          background-color: #41cfff; }
     @media (max-width: 990px) {
+      header .header-container .navigation {
+        text-align: center;
+        padding-bottom: 30px; }
+        header .header-container .navigation .phone {
+          display: none; }
       header .header-container .flex-wrap {
         display: block;
         text-align: center;
@@ -557,6 +562,16 @@ header {
           width: auto;
           text-align: center;
           margin-bottom: 70px; } }
+
+footer {
+  background-image: url(../img/footer/footer-bg.png);
+  background-size: cover;
+  background-position: center center;
+  height: 250px;
+  width: 100%; }
+  footer .footer-logo {
+    text-align: center;
+    padding-top: 50px; }
 
 #about {
   max-width: 800px;
@@ -639,7 +654,8 @@ header {
         width: auto;
         text-align: center; }
       #technology .flex-wrap-tech .flex-items-tech h3, #technology .flex-wrap-tech .flex-items-tech p {
-        text-align: center; } }
+        text-align: center;
+        padding: 0 20px; } }
 
 #design {
   max-width: 800px;
@@ -651,7 +667,7 @@ header {
     text-align: center;
     padding-bottom: 100px; }
     #design .design-img img {
-      width: 100%; }
+      max-width: 100%; }
   #design .flex-wrap-compare {
     display: -ms-flexbox;
     display: flex;
@@ -692,3 +708,52 @@ header {
       #design .flex-wrap-compare .flex-items-compare h3, #design .flex-wrap-compare .flex-items-compare p {
         text-align: center;
         margin: 0; } }
+
+#order {
+  background-image: url(../img/order/order-bg.png);
+  background-size: cover;
+  background-position: center center;
+  height: auto;
+  width: 100%;
+  padding: 50px 0;
+  overflow: visible; }
+  #order .flex-wrap-order {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 20px 0; }
+    #order .flex-wrap-order .flex-items-order {
+      width: 33%;
+      text-align: center;
+      margin: 0 auto; }
+      #order .flex-wrap-order .flex-items-order h3 {
+        padding: 15px 0 25px 0;
+        margin: 0 auto; }
+      #order .flex-wrap-order .flex-items-order p {
+        color: #2D2D2D;
+        font-size: 14px;
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 0 20px 15px 20px; }
+      #order .flex-wrap-order .flex-items-order .flex-items-order {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto; }
+        #order .flex-wrap-order .flex-items-order .flex-items-order img {
+          padding-top: 50px; }
+        #order .flex-wrap-order .flex-items-order .flex-items-order h3 {
+          font-size: 20px;
+          font-weight: 600;
+          text-align: justify; }
+        #order .flex-wrap-order .flex-items-order .flex-items-order p {
+          text-align: justify; }
+  @media (max-width: 750px) {
+    #order .flex-wrap-order {
+      display: block;
+      padding: 50px 0 0 0; }
+      #order .flex-wrap-order .flex-items-order {
+        width: auto;
+        text-align: center; }
+      #order .flex-wrap-order .flex-items-order h3, #order .flex-wrap-order .flex-items-order p {
+        text-align: center;
+        margin: 0 auto; } }
