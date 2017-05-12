@@ -433,61 +433,10 @@ td,
 th {
   padding: 0; }
 
-.gigantic, .huge, .large, .bigger, .big,
-h1, h2, h3, h4, h5, h6 {
-  color: #3B3E42;
-  font-weight: bold; }
-
-.gigantic {
-  font-size: 110px;
-  line-height: 1.09;
-  letter-spacing: -2px; }
-
-.huge, h1 {
-  font-size: 68px;
-  line-height: 1.05;
-  letter-spacing: -1px; }
-
-.large, h2 {
-  font-size: 42px;
-  line-height: 1.14; }
-
-.bigger, h3 {
-  font-size: 26px;
-  line-height: 1.38; }
-
-.big, h4 {
-  font-size: 22px;
-  line-height: 1.38; }
-
-.small, small {
-  font-size: 10px;
-  line-height: 1.2; }
-
-.lead {
-  line-height: 1.1;
-  font-size: 36px; }
-  .lead.outdented {
-    text-indent: -0.8em; }
-    @media (max-width: 640px) {
-      .lead.outdented {
-        text-indent: 0; } }
-
-p {
-  margin: 0 0 20px 0; }
-
-em {
-  font-style: italic; }
-
-strong {
-  font-weight: bold; }
-
-hr {
-  border: solid #ddd;
-  border-width: 1px 0 0;
-  clear: both;
-  margin: 10px 0 30px;
-  height: 0; }
+h3 {
+  color: #2D2D2D;
+  font-size: 18px;
+  font-weight: 600; }
 
 a {
   color: #45BAE2;
@@ -523,14 +472,10 @@ body {
   background: #fff;
   font-size: 16px;
   line-height: 1.6;
-  font-family: 'Fira Sans' sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #2D2D2D;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
-  body .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 20px; }
 
 header {
   background-image: url(../img/header/header-bg.png);
@@ -613,88 +558,137 @@ header {
           text-align: center;
           margin-bottom: 70px; } }
 
-.about {
+#about {
   max-width: 800px;
   margin: 0 auto;
   padding: 0 20px; }
-  .about .flex-wrap-about, .about .flex-wrap-about-2 {
+  #about .flex-wrap-about, #about .flex-wrap-about-2 {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
     padding: 20px 0; }
-    .about .flex-wrap-about .flex-items-about, .about .flex-wrap-about-2 .flex-items-about {
+    #about .flex-wrap-about .flex-items-about, #about .flex-wrap-about-2 .flex-items-about {
       width: 33%;
       text-align: center;
       margin: 0 auto; }
-      .about .flex-wrap-about .flex-items-about img, .about .flex-wrap-about-2 .flex-items-about img {
+      #about .flex-wrap-about .flex-items-about img, #about .flex-wrap-about-2 .flex-items-about img {
         height: 65px;
         width: 65px; }
-      .about .flex-wrap-about .flex-items-about h3, .about .flex-wrap-about-2 .flex-items-about h3 {
-        color: #2D2D2D;
-        font-size: 18px;
-        font-weight: 600;
+      #about .flex-wrap-about .flex-items-about h3, #about .flex-wrap-about-2 .flex-items-about h3 {
         padding: 15px 0 25px 0;
         margin: 0; }
-      .about .flex-wrap-about .flex-items-about p, .about .flex-wrap-about-2 .flex-items-about p {
+      #about .flex-wrap-about .flex-items-about p, #about .flex-wrap-about-2 .flex-items-about p {
         color: #2D2D2D;
         font-size: 14px;
         max-width: 300px;
         margin: 0 auto;
         padding: 0 20px 15px 20px; }
-    .about .flex-wrap-about .flex-items-about-2, .about .flex-wrap-about-2 .flex-items-about-2 {
+    #about .flex-wrap-about .flex-items-about-2, #about .flex-wrap-about-2 .flex-items-about-2 {
       width: 100%;
       text-align: center;
       margin: 0 auto; }
-      .about .flex-wrap-about .flex-items-about-2 img, .about .flex-wrap-about-2 .flex-items-about-2 img {
+      #about .flex-wrap-about .flex-items-about-2 img, #about .flex-wrap-about-2 .flex-items-about-2 img {
         padding-top: 50px; }
-      .about .flex-wrap-about .flex-items-about-2 h3, .about .flex-wrap-about-2 .flex-items-about-2 h3 {
+      #about .flex-wrap-about .flex-items-about-2 h3, #about .flex-wrap-about-2 .flex-items-about-2 h3 {
         font-size: 20px;
         font-weight: 600;
         text-align: justify; }
-      .about .flex-wrap-about .flex-items-about-2 p, .about .flex-wrap-about-2 .flex-items-about-2 p {
+      #about .flex-wrap-about .flex-items-about-2 p, #about .flex-wrap-about-2 .flex-items-about-2 p {
         text-align: justify; }
   @media (max-width: 750px) {
-    .about .flex-wrap-about, .about .flex-wrap-about-2 {
+    #about .flex-wrap-about, #about .flex-wrap-about-2 {
       display: block;
       padding: 50px 0 0 0; }
-      .about .flex-wrap-about .flex-items-about, .about .flex-wrap-about .flex-items-about-2, .about .flex-wrap-about-2 .flex-items-about, .about .flex-wrap-about-2 .flex-items-about-2 {
+      #about .flex-wrap-about .flex-items-about, #about .flex-wrap-about .flex-items-about-2, #about .flex-wrap-about-2 .flex-items-about, #about .flex-wrap-about-2 .flex-items-about-2 {
         width: auto;
         text-align: center; }
-      .about .flex-wrap-about .flex-items-about-2 h3, .about .flex-wrap-about .flex-items-about-2 p, .about .flex-wrap-about-2 .flex-items-about-2 h3, .about .flex-wrap-about-2 .flex-items-about-2 p {
+      #about .flex-wrap-about .flex-items-about-2 h3, #about .flex-wrap-about .flex-items-about-2 p, #about .flex-wrap-about-2 .flex-items-about-2 h3, #about .flex-wrap-about-2 .flex-items-about-2 p {
         text-align: center; } }
 
-.technology {
+#technology {
   background-image: url(../img/technology/tech-bg.png);
   background-size: cover;
   background-position: center center;
   height: auto;
   width: 100%; }
-  .technology .flex-wrap-tech {
+  #technology .flex-wrap-tech {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
     padding: 50px 0;
     max-width: 800px;
     margin: 0 auto; }
-    .technology .flex-wrap-tech .flex-items-tech {
+    #technology .flex-wrap-tech .flex-items-tech {
       width: 100%;
       text-align: center;
       margin: 0 auto; }
-      .technology .flex-wrap-tech .flex-items-tech img {
+      #technology .flex-wrap-tech .flex-items-tech img {
         padding-top: 50px; }
-      .technology .flex-wrap-tech .flex-items-tech h3 {
+      #technology .flex-wrap-tech .flex-items-tech h3 {
         font-size: 20px;
         font-weight: 600;
         text-align: justify; }
-      .technology .flex-wrap-tech .flex-items-tech p {
+      #technology .flex-wrap-tech .flex-items-tech p {
         text-align: justify;
         margin: 0; }
   @media (max-width: 750px) {
-    .technology .flex-wrap-tech {
+    #technology .flex-wrap-tech {
       display: block;
       margin: 30px 0; }
-      .technology .flex-wrap-tech .flex-items-tech {
+      #technology .flex-wrap-tech .flex-items-tech {
         width: auto;
         text-align: center; }
-      .technology .flex-wrap-tech .flex-items-tech h3, .technology .flex-wrap-tech .flex-items-tech p {
+      #technology .flex-wrap-tech .flex-items-tech h3, #technology .flex-wrap-tech .flex-items-tech p {
         text-align: center; } }
+
+#design {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 20px 0 20px; }
+  #design h3 {
+    text-align: center; }
+  #design .design-img {
+    text-align: center;
+    padding-bottom: 100px; }
+    #design .design-img img {
+      width: 100%; }
+  #design .flex-wrap-compare {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 20px 0; }
+    #design .flex-wrap-compare .flex-items-compare {
+      width: 33%;
+      text-align: center;
+      margin: 0 auto; }
+      #design .flex-wrap-compare .flex-items-compare h3 {
+        padding: 15px 0 25px 0;
+        margin: 0; }
+      #design .flex-wrap-compare .flex-items-compare p {
+        color: #2D2D2D;
+        font-size: 14px;
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 0 20px 15px 20px; }
+      #design .flex-wrap-compare .flex-items-compare .flex-items-compare {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto; }
+        #design .flex-wrap-compare .flex-items-compare .flex-items-compare img {
+          padding-top: 50px; }
+        #design .flex-wrap-compare .flex-items-compare .flex-items-compare h3 {
+          font-size: 20px;
+          font-weight: 600;
+          text-align: justify; }
+        #design .flex-wrap-compare .flex-items-compare .flex-items-compare p {
+          text-align: justify; }
+  @media (max-width: 750px) {
+    #design .flex-wrap-compare {
+      display: block;
+      padding: 50px 0 0 0; }
+      #design .flex-wrap-compare .flex-items-compare {
+        width: auto;
+        text-align: center; }
+      #design .flex-wrap-compare .flex-items-compare h3, #design .flex-wrap-compare .flex-items-compare p {
+        text-align: center;
+        margin: 0; } }
